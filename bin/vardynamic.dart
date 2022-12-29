@@ -4,7 +4,6 @@ void main(){
 
   dynamic name1 = 'Yadhu'; //dynamic can be used to assign diff values
   name1 = 12;
-
   const String fname = 'abcd'; //const is used for constant variables, can't change value
   final String lname = 'cfr'; //final is same as const
 

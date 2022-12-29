@@ -17,8 +17,8 @@ void main(){
 
   var st2 = Student();
   print('Student 2 details');
-  print('Name is   ${st2.name = 'Abhi'}');
-  print('Age is    ${st2.age = 22}');
-  print('Phone is  ${st2.phone = 5848451515}');
+  print('Name is   ${st2.name = 'Arun'}');
+  print('Age is    ${st2.age = 24}');
+  print('Phone is  ${st2.phone = 5841515}');
   print('Course is ${Student.course = 'Flutter'}');
 }
