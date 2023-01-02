@@ -1,6 +1,9 @@
+import 'dart:io';
+
 void main(){
-  int a = 10; // = is assignment operator
-  double b = 20;
+  print('Enter two numbers');
+  var a = double.parse(stdin.readLineSync()!); // = is assignment operator
+  var b = int.parse(stdin.readLineSync()!);
   print('$a + $b = ${a+b}');
   print('$a - $b = ${-(a-b)}');
   print('$a * $b = ${a/b}');
@@ -8,8 +11,9 @@ void main(){
   print('$a ~/ $b =${a~/b}');
   print('$a % $b = ${a%b}');
 
-  dynamic x = 12;
-  double y = 14;
+  print('\nEnter the numbers');
+  dynamic x = double.parse(stdin.readLineSync()!) ;
+  double y = double.parse(stdin.readLineSync()!);
   print('x += y = ${x += y}'); // x=x+y
   print('x -= y = ${x -= y}');
   print('x *= y = ${x *= y}');
@@ -20,8 +24,8 @@ void main(){
   // unary operators
   // postfix exp++ exp--
   // prefix ++exp --exp
-
-  int c = 150;
+  print('\nEnter a variable');
+  int c = int.parse(stdin.readLineSync()!);
   print(c++);
   print(c);
   print(++c);
@@ -48,11 +52,25 @@ void main(){
   print(j <= k);
   print(j >= k);
 
-  //logical
-  var username = "Admin";
-  var pswd = "check";
+  //logical operators
+
+  var username = 'Admin';
+  var pswd = 'check';
   print('\nlogical variables');
-  print(username == 'Admin' && pswd == 'Check'); // true && false => false
-  print(username == 'Admin'  || pswd == "check"); // true || false => true
-  print( !(username == 'Admin'  || pswd == "check") ); //inverse of the answer
-}
+  print(username == 'admin' && pswd == 'check'); // true && false => false
+  print(username == 'Admin'  || pswd == "Check"); // true || false => true
+  print( !(username == 'Admin'  || pswd == "check") ); // ! is inverse of the answer
+  print( !(username == 'Admin' && pswd == 'check') );
+
+  //binary operators
+  print('\nLogical operators');
+  int h=9; // 0000 0110
+  int f=2; // 0000 0010
+  print(h>>1);  //bitwise operator - right shift = 0000 0110 >>1 => 0000 0011
+  print(h<<2);  //left shift  = 0000 0110 <<2 => 0001 1000
+  print('\n');
+  print(h&f); //and &
+  print(h|f); //or |
+  print(h^f); //xor ^
+
+} ///how to make letter bold?
