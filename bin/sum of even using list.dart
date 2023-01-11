@@ -5,5 +5,5 @@ void main(){
     if(list[i]%2==0) {
       sum += list[i];
     }
-  }print('The sum of numbers are $sum');
+  }print('The sum of even numbers are $sum');
 }

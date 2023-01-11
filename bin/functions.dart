@@ -28,10 +28,11 @@ String display(){
 
   return 'Hi';
   }
+  void mul(int a, int b)=>a*b; //lambda fn
 void main(){
   show();
   add(15, 16);
-  sum(5, 6, 7);
-  
+  int f=sum(5,6,7);
+  print(f);
   print(display());
 }
