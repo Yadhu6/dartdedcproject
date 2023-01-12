@@ -7,7 +7,7 @@ class Car{//parent class
 class Maruti extends Car{ ///extends used for inheritence //child class
   String brand = 'Maruti';
 }
-class Benz extends Car {
+class Benz extends Car {  //heirarchial inheritance
   String brand = 'Mercedes Benz';
 }
 void main(){
