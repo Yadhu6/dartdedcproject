@@ -21,7 +21,7 @@ void add(int a, int b){
 int sum(int a, int b, int c){
   int sum = a+b+c;
   print(sum);
-  return 685;
+  return 20;
 }
 ///default function with returntype
 String display(){
@@ -35,4 +35,6 @@ void main(){
   int f=sum(5,6,7);
   print(f);
   print(display());
+  add(8, 9);
+  mul(4, 5);
 }

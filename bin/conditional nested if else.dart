@@ -1,7 +1,9 @@
+import 'dart:io';
+
 void main(){
   String user = 'Admin';
-  int pswd = 12345;
-  int otp = 4567;
+  int pswd = int.parse(stdin.readLineSync()!);
+  int otp = 457;
   if(user == 'Admin' && pswd == 12345){
     print('Username and Password are correct');
     if(otp == 4567){

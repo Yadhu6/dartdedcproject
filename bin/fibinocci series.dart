@@ -4,7 +4,7 @@ void main(){
   int c;
   print(a);
   print(b);
-  for(int i=0;i<=6;i++){
+  for(int i=0;i<=8;i++){
   c = a+b;
   print(c);
   a=b; //assign value of b to a

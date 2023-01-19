@@ -8,7 +8,7 @@ class Mother{
     print('iam $name');
   }
 }
-class Child implements Father,Mother{
+class Child implements Father,Mother{ //interface class
   @override
   void show() {
     print('Iam Yadhu');
